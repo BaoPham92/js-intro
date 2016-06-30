@@ -23,7 +23,7 @@ HTML (content), CSS (style) and Javascript (behavior) as the main components of 
   - JS: ???
 
 ## Think-Pair-Share: Identify Javascript features in Cookie Clicker.
-* 3 minutes: Go look at it. Play with it. Think about what's allowing these behaviors to exist.
+* 3 minutes: Go look at [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) . Play with it. Think about what's allowing these behaviors to exist.
 * 3 minutes: Discuss and compare findings in pairs.
 * Think about what functionality the site has after it has loaded.
 * Why would you say a particular feature is "run" by Javascript instead of, say, CSS?
