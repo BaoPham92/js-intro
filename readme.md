@@ -665,7 +665,8 @@ What are the differences between `for` and `while`?
 
 Temperature conversion (Part II): [Temp Converter, Part 2!](https://github.com/ga-wdi-exercises/temperature_converter)  
 
-### You do - Fizzbuzz(can use conditionals)(20m)
+# Coding Exercise #3 (can use conditionals)(20m)
+[Fizzbuzz](https://github.com/ga-wdi-exercises/fizzbuzz_js)
 
 ### Homework
 - [Choose your own adventure](https://github.com/ga-wdi-exercises/choose_your_own_adventure_js)
