@@ -636,7 +636,7 @@ Followed by 3 parts `;` separated in parentheses.
 
 ```javascript
 // instantiate an array of names
-var names = ["tyler", "nayana", "andy", "adrian", "nick", "jesse"]
+var names = ["tyler", "nayana", "andy", "adrian", "nick", "jesse", "james"]
 for(i in names){
   console.log(names[i])
 }
