@@ -386,7 +386,7 @@ String methods
 
   // .slice(): return and store a portion of a string.
   var greetings = "Hi there Nayana!";
-  var buddy = greetings.slice( 9, 13 );
+  var buddy = greetings.slice( 9, 15 );
   => "Nayana"
   ```
 
