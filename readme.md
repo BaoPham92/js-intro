@@ -209,4 +209,3 @@ Comments
 - What are the five primitive data types?
 - What are the two composite data types? When would you use each?
 - What is an example of type coercion?
-- What is an example of a semantically-named variable?
