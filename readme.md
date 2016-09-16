@@ -51,7 +51,7 @@ So, to sum up the main three components of front-end web development up in one w
 
 # JS: The Client-Side Programming Language of the Web (5/25)
 
-- Brief history: Created in 10 days by Brendan Eyck, of Mozilla. *Not* related to Java in any way but its name.
+- Brief history: Created in 10 days by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich), of Mozilla. *Not* related to Java in any way but its name.
   - "Java" is to "Javascript" as "ham" is to "hamster"
 
 - ST-wg: What's a programming language?
