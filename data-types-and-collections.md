@@ -19,11 +19,11 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
 
   ```javascript
   // For example...
-  var myClass = "WDI11";
+  var myClass = "WDI13";
 
   // After declaration you can then reference variables by just their name, without "var".
   myClass;
-  => "WDI11"
+  => "WDI13"
   ```
 
 - Javascript is a "dynamic" or "untyped" language, meaning a variable can switch between data types.
@@ -56,7 +56,7 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
   => 5
   ```
 
-- Order of precedence: P(E)MDAS (Parentheses, Multiplication, Division, Addition, Subtraction)
+- Order of Operations: PEMDAS or **P**lease **E**xcuse **M**y **D**ear **A**unt **S**ally (Parenthetical expressions, Exponentiation, Multiplication, Division, Addition, Subtraction)
 
   ```javascript
   // This would be interpreted as...
