@@ -157,13 +157,21 @@ console.log("hello world")
 
 > console.log() is just a way to log something in  our REPL.  
 
+# Intro to Javascript Fundamentals
+
 ## You do: [Data Types & Data Collections](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(20 min, 0:50)
 
 Reference [Data Types And Collections](./data-types-and-collections.md) to complete the above exercise.
 
-## Break (10 min, 1:00)
 
-## 10 Min Review (10 min, 1:10)
+## 10 Min Review (10 min, 1:00)
+
+- Type Coercion
+- Accessing values in collections and objects
+- 5 types of Primitives
+- Composite Data Types
+
+## Break (10 min, 1:10)
 
 ## You do: [Booleans and Conditionals](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 min, 1:25)
 
@@ -171,15 +179,22 @@ Reference [Booleans and Conditionals](./booleans-and-conditionals.md) to complet
 
 ## 10 Min Review (10 min, 1:35)
 
+- Truthy vs Falsey
+- Purpose of Control Flow
+
 ## You do: [Loops and Fizzbuzz](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 min, 1:50)
 
 Reference [Loops](./loops.md) to complete the above exercise.
 
-# BREAK (10 min, 2:00)
+## 10 Min Review (10 min, 2:00)
+
+- when to use `for` and when to use `while`
+
+# BREAK (10 min, 2:10)
 
 # Syntax & Semantic Naming
 
-## Syntax (5 min, 2:05)
+## Syntax (5 min, 2:15)
 
 ### Semicolons
 - General practice is to end every line with a semi-colon, though you may see JS code without any semi-colons.
@@ -219,7 +234,7 @@ Reference [Loops](./loops.md) to complete the above exercise.
   ```
 
 
-## Comments (5 min, 2:10)
+## Comments (5 min, 2:20)
 
 Comments are an extremely important part of writing code. They help us make sense out of our code, especially other people reading our code, or when we have walked away from some code and have completely forgotten what certain sections of it do (this happens much more quickly than you may imagine!). They are used to explain the purpose or reasoning behind a piece of code.
 
