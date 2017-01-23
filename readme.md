@@ -24,7 +24,7 @@ HTML, CSS and Javascript are technologies are the basic components of front-end 
 #### If a web application or website were a building:
 
 ##### HTML: Structure and Content
- HTML would be like the most stripped down version of that building, just the structure of the building and some content.
+ HTML would be like the most stripped down version of that building, just the structure of the building, the building materials, and some content (maybe unfurnished offices, an empty classroom, a set of not-yet-operational bowling-lanes, etc).
 
 ##### CSS: Styling
 CSS is responsible for the appearance of the building, adding granite floors, polished doors, wooden railings, etc. CSS styles the content of a website to look like more than just black text on a white background.
@@ -75,6 +75,7 @@ So, to sum up the main three components of front-end web development up in one w
 
 - Brief history: Created in 10 days by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich), of Mozilla. *Not* related to Java in any way but its name.
   - "Java" is to "Javascript" as "ham" is to "hamster"
+  - ECMA Script 6 (ES6/2015) vs ES5
 
 - ST-wg: What's a programming language?
   - What can it do that a markup language like HTML can't?
@@ -136,7 +137,7 @@ You should see something like this, but without the example of a javascript expr
 
 ### The REPL
 
-The "Console" is an example of a REPL, which is a tool for testing and debugging code. REPL is an acronym that stands for “Read, Evaluate, Print, Loop”.
+The "Console" is an example of a REPL, which is a tool for testing and debugging code. REPL is an acronym that stands for “**R**ead, **E**valuate, **P**rint, **L**oop”.
 
 Think of the REPL as being simply like scratch-paper for code. It's a small programming environment that lets us run Javascript code one line at a time.
 
@@ -160,7 +161,7 @@ console.log("hello world")
 
 Reference [Data Types And Collections](./data-types-and-collections.md) to complete the above exercise.
 
-## Break(10 min, 1:00)
+## Break (10 min, 1:00)
 
 ## 10 Min Review (10 min, 1:10)
 
@@ -174,7 +175,7 @@ Reference [Booleans and Conditionals](./booleans-and-conditionals.md) to complet
 
 Reference [Loops](./loops.md) to complete the above exercise.
 
-# BREAK (10min, 2:00)
+# BREAK (10 min, 2:00)
 
 # Syntax & Semantic Naming
 
@@ -197,8 +198,15 @@ Reference [Loops](./loops.md) to complete the above exercise.
 
   var isThisVarCamelCase = true;
 
+  //let is similar to var
   let numPatrons = 6;
 
+  //let is similar to var, but you can only assign the value a const once, it may
+
+  //constants are by convention, in ALL_CAPS_SEPARATED_BY_UNDERSCORES
+  const GRAVITY_FORCE = 1;
+
+  //you can also use const (or var, but const is preferable)
   const helloWorld = function(){
     //call this function: helloWorld()
     console.log("Hello World!");
@@ -252,7 +260,10 @@ You can also pass in a string as an argument to have the pop up box contain that
 
 ```js
 var age = prompt("How old are you?");
+// ES6 String Interpolation
 alert(`You are ${age} years old.`);
+// ES5 Version
+alert("You are " + age + " years old.");
 ```
 
 Whatever we type into the textbox in the window that `prompt()` brings up, is **returned** by prompt to the variable `age`.
