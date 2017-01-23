@@ -2,19 +2,19 @@
 
 - Describe the role Javascript plays alongside HTML and CSS.
 - List and describe the primitive data types.
+- Define and use complex data types.
+- Practice proper JS syntax and semantic variable naming.
 - Describe uses of mathematical operators in Javascript.
 - Define type coercion.
-- Define and use complex data types.
 - Explain the difference between `prompt` and `console.log`
-- Practice proper JS syntax and semantic variable naming.
-- Differentiate between true & false && truthy & falsey
-- Describe why control flow is utilized in computer programming
+- Differentiate between `true` & `false` && ***truthy*** & ***falsey***
 - Write an if, else if, and else statement in JS
+- Describe why control flow is utilized in computer programming
 - Write a for loop and while loop in JS and differentiate between them
 - Utilize loops to iterate through complex data types
 
 ## Framing
-We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS but not nearly enough! How can we start to add logic and behaviors to our web apps? .. Enter javascript.
+We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS but not nearly enough! How can we start to add logic, data-handling, and behaviors to our web apps? .. Enter javascript.
 
 # HTML, CSS and Javascript (20/20)
 
@@ -89,6 +89,17 @@ So, to sum up the main three components of front-end web development up in one w
 
 # Setting up our environment (5/30)
 
+We're going to spend the next few minutes learning how to set up our development environment, or our work area for working with Javascript. As far as development environments go, this is about as simple as it gets! If it feels unfamiliar and cumbersome to set up at first, don't worry--speed quickly comes with repetition.
+
+## Steps:
+  0. [Create files](#filecreate)
+  0. Save changes to file(s)
+    - `⌘ S`
+  0. [Open files in chrome and open chrome console](#openinchrome)
+    - `⌘ TAB` to switch to Chrome, if open
+    - If Chrome isn't open, `⌘ [SPACE]` to open Spotlight (Max OS X Finder Speed Search), and then type Chrome and hit enter when the Chrome icon appears
+
+<a name="filecreate"></a>
 ## First, create your HTML and JS
 
 - `index.html` and `script.js`
@@ -97,29 +108,37 @@ So, to sum up the main three components of front-end web development up in one w
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Yo</title>
+    <title>This is the Title</title>
   </head>
   <body>
   <script src="script.js"></script>
   </body>
 </html>
 ```
-You can also put your script tag in the head. Putting the tag in the body ensures that the rest of the page loads before your script files run. However, [HTML5 has two new attributes ](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html) that allow for more control in how scripts run, regardless of whether they're place in the head or body.
+You can also put your script tag in the head. Putting the tag in the body ensures that the rest of the page loads before your script files run. Also of note, [HTML5 added two attributes ](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html) that increase control when scripts load and run.
 
+
+<a name="openinchrome"></a>
 ## Next, open the site in Chrome, and open the Dev Tools
 
-- Command + Option + I
-- The "Console" is a REPL
-  - “Read-Eval-Print Loop”.
-  - Programming environment that lets us run Javascript code one line at a time.
-  - What does it do?
-    1. (R)eads our code.
-    2. (E)valuates it.
-    3. (P)rints it to the console.
-    4. Then it (L)oops back to the beginning, ready to (R)ead the next line of code we feed it.
-  - Primarily used for testing and debugging.
+![Chrome Console image](images/chrome-console.png)
 
-> `⌘ + ⌥ + i` enters you in the the chrome dev tools(if you're using chrome...) Here you can do a bunch of stuff like inspect elements and look at the html. More importantly for this class though, is it allows you to access the console which interacts with the JS you loaded to your page. In our case we'll see that interaction with the code below
+- Open the javascript console with Command + Option + J (`⌘ + ⌥ + J`)
+
+### The REPL
+
+The "Console" is an example of a REPL, which is a tool for testing and debugging code. REPL is an acronym that stands for “Read, Evaluate, Print, Loop”.
+
+Think of the REPL as being simply like scratch-paper for code. It's a small programming environment that lets us run Javascript code one line at a time.
+
+  - What does it do?
+    1. (**R**)eads our code.
+    2. (**E**)valuates expressions.
+    3. (**P**)rints the result to the console, if any (some things result in or ***return*** `undefined`).
+    4. Then it (**L**)oops back to the beginning, ready to (**R**)ead the next line of code we feed it. It 'listens' for new code.
+  - Primarily used for testing and debugging. It's like scratch paper for coding!
+
+> In Chrome, `⌘ + ⌥ + i` opens the chrome dev tools. Here you can do a bunch of stuff like inspect elements and see html, css and scripts the page has loaded. It allows you to access the console which interacts with the JS that the page has loaded. In our case we'll see that interaction with the code below
 
 In your `script.js` file add the following:
 ```js
