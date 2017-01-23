@@ -16,7 +16,7 @@
 ## Framing
 We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS but not nearly enough! How can we start to add logic, data-handling, and behaviors to our web apps? .. Enter javascript.
 
-# HTML, CSS and Javascript (20/20)
+# HTML, CSS and Javascript (20min / 0:20)
 
 HTML, CSS and Javascript are technologies are the basic components of front-end development. Front-end frameworks and libraries that add "layers of abstraction" (the ability to do more with less code) make use of these three technologies.
 
@@ -71,7 +71,7 @@ So, to sum up the main three components of front-end web development up in one w
 - CSS: Styling
 - Javascript: Behavior
 
-# JS: The Client-Side Programming Language of the Web (5/25)
+# JS: The Client-Side Programming Language of the Web (5 Minutes / 0:25)
 
 - Brief history: Created in 10 days by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich), of Mozilla. *Not* related to Java in any way but its name.
   - "Java" is to "Javascript" as "ham" is to "hamster"
@@ -93,7 +93,7 @@ So, to sum up the main three components of front-end web development up in one w
   - One of the biggest additions to JS was AJAX, which allows use to reload parts of a page without refreshing the entire thing (just like on Facebook). Big implications for User Experience.
 - A lot of frameworks and libraries -- like Backbone and jQuery -- have emerged that enable us to do so much more -- and do it quickly -- with Javascript.
 
-# Setting up our environment (5/30)
+# Setting up our environment (5 minutes / 0:30)
 
 We're going to spend the next few minutes learning how to set up our development environment, or our work area for working with Javascript. As far as development environments go, this is about as simple as it gets! If it feels unfamiliar and cumbersome to set up at first, don't worry--speed quickly comes with repetition.
 
@@ -126,10 +126,13 @@ You can also put your script tag in the head. Putting the tag in the body ensure
 
 <a name="openinchrome"></a>
 ## Next, open the site in Chrome, and open the Dev Tools
+- Open the javascript console with Command + Option + J (`⌘ + ⌥ + J`)
+
+You should see something like this, but without the example of a javascript expression that declares a variable.
 
 ![Chrome Console image](images/chrome-console.png)
+> Example of a javascript expression (a variable declaration, or declaring a variable) in the Chrome Console.
 
-- Open the javascript console with Command + Option + J (`⌘ + ⌥ + J`)
 
 ### The REPL
 
@@ -153,23 +156,88 @@ console.log("hello world")
 
 > console.log() is just a way to log something in  our REPL.  
 
-## You do: [Data Types & Data Collections](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(20 mins)
+## You do: [Data Types & Data Collections](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(20 minutes, 0:50)
 
 Reference [Data Types And Collections](./data-types-and-collections.md) to complete the above exercise.
 
-## You do: [Booleans and Conditionals](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 mins)
+## Break(10 minutes, 1:00)
+
+## 10 Min Review (10 minutes, 1:10)
+
+## You do: [Booleans and Conditionals](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 minutes, 1:25)
 
 Reference [Booleans and Conditionals](./booleans-and-conditionals.md) to complete the above exercise.
 
-## You do: [Loops and Fizzbuzz](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 mins)
+## 10 Min Review (10 minutes, 1:35)
+
+## You do: [Loops and Fizzbuzz](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 mins, 1:50)
 
 Reference [Loops](./loops.md) to complete the above exercise.
 
-# BREAK (10min)
+# BREAK (10mins, 2:00)
 
-# Prompt
+# Syntax & Semantic Naming
 
-We've learned alot about basic data types, but it'd be nice if we had a way of getting user input into our browser! We'll learn some ways to use forms and such later in the course, but for now, we'll be getting user input using the `prompt()` function.
+## Syntax (5 minutes, 2:05)
+
+### Semicolons
+- General practice is to end every line with a semi-colon, though you may see JS code without any semi-colons.
+- Usage depends on the developer.
+
+### camelCase: The Javascript Variable-naming Convention
+  - First letter of first word lowercase.
+  - First letter of remaining words uppercase.
+  - No spaces or punctuation between words.
+
+# camelCase Examples
+
+  ```javascript
+  // camelCase
+  var pizzaTopping = "pepperoni";
+
+  var isThisVarCamelCase = true;
+
+  let numPatrons = 6;
+
+  const helloWorld = function(){
+    //call this function: helloWorld()
+    console.log("Hello World!");
+  }
+
+  //another way of writing the above function
+  function helloWorld(){
+    console.log("Hello World!");
+  }
+  ```
+
+
+#### Comments
+
+Comments are an extremely important part of coding. They help us make sense out of our code, especially other people reading our code, or when we have walked away from some code and have completely forgotten what certain sections of it do (this happens much more quickly than you may imagine!). They are used to explain the purpose or reasoning behind a piece of code.
+
+If you are working on a team, your documentation and commenting practices often translate to how easy you are to work with!
+
+Look out for future-you, and your colleagues!
+
+
+  ```javascript
+  // Single line comment
+
+  /*
+    Multiple
+    line
+    comments
+  */
+  ```
+
+
+## Getting User Input & Conditionals
+
+> These are the basic things you'll need to know for the HW.
+
+### `.prompt()`
+
+We've learned about basic data types, but it'd be nice if we had a way of getting user input into our browser! We'll learn some ways to use forms and such later in the course, but for now, we'll be getting user input using the `prompt()` function.
 
 At any point in our JS code, if we write `prompt()`, a pop up box will open in our browser for a user to enter in text.
 
@@ -183,7 +251,27 @@ console.log(valueOfPrompt)
 You can also pass in a string as an argument to have the pop up box contain that string as a ... prompt.
 
 ```js
-var age = prompt("How old are you?")
+var age = prompt("How old are you?");
+alert(`You are ${age} years old.`);
+```
+
+Whatever we type into the textbox in the window that `prompt()` brings up, is **returned** by prompt to the variable `age`.
+
+### Adding Conditionals
+
+Let's say, we were deciding whether or not to let someone inside of a club.
+
+```js
+var age = prompt("How old are you?");
+alert(`You are ${age} years old.`);
+
+if (age >= 21) {
+  alert("Welcome to the club");
+} else if (age < 21 && age > 0) {
+  alert( "You are too young :(" );
+} else {
+  alert("Your age is not a number (NaN) or is negative. Invalid input.");
+}
 ```
 
 ## We Do: Pseudocode Temp Converter Part I
@@ -202,41 +290,6 @@ Review
 
 - [Luhn Algorithm](https://github.com/ga-wdi-exercises/luhn_algorithm#challenge-validating-credit-card-numbers)
 - [Anagram Detector](https://github.com/ga-wdi-exercises/anagrammer#anagram-detector)
-
-# Syntax & Semantic Naming
-
-## Syntax (5/65)
-
-Variable syntax
-- Should be named using camelCase lettering.
-  - First letter of first word lowercase. First letter of remaining words uppercase.
-  - No spaces or punctuation between words.
-
-  ```javascript
-  // camelCase
-  var pizzaTopping = "pepperoni";
-  ```
-Semicolons
-- General practice is to end every line with a semi-colon.
-- Usage depends on the developer.
-
-Comments
-- Q: Why would you use comments?
-  - Talked about this in the HTML class. Same reasoning applies.
-- Types of comments
-  ```javascript
-  // Single line
-
-  /*
-    Multiple
-    line
-    comments
-  */
-  ```
-
-- Use to explain the purpose or reasoning behind a piece of code.
-- Help out other developers and future you.
-  - If anything, it will help us out when grading your projects!
 
 
 ### Homework
