@@ -16,7 +16,7 @@
 ## Framing
 We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS but not nearly enough! How can we start to add logic, data-handling, and behaviors to our web apps? .. Enter javascript.
 
-# HTML, CSS and Javascript (20min / 0:20)
+# HTML, CSS and Javascript (20 min, 0:20)
 
 HTML, CSS and Javascript are technologies are the basic components of front-end development. Front-end frameworks and libraries that add "layers of abstraction" (the ability to do more with less code) make use of these three technologies.
 
@@ -71,7 +71,7 @@ So, to sum up the main three components of front-end web development up in one w
 - CSS: Styling
 - Javascript: Behavior
 
-# JS: The Client-Side Programming Language of the Web (5 Minutes / 0:25)
+# JS: The Client-Side Programming Language of the Web (5 Minutes, 0:25)
 
 - Brief history: Created in 10 days by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich), of Mozilla. *Not* related to Java in any way but its name.
   - "Java" is to "Javascript" as "ham" is to "hamster"
@@ -93,7 +93,7 @@ So, to sum up the main three components of front-end web development up in one w
   - One of the biggest additions to JS was AJAX, which allows use to reload parts of a page without refreshing the entire thing (just like on Facebook). Big implications for User Experience.
 - A lot of frameworks and libraries -- like Backbone and jQuery -- have emerged that enable us to do so much more -- and do it quickly -- with Javascript.
 
-# Setting up our environment (5 minutes / 0:30)
+# Setting up our environment (5 min, 0:30)
 
 We're going to spend the next few minutes learning how to set up our development environment, or our work area for working with Javascript. As far as development environments go, this is about as simple as it gets! If it feels unfamiliar and cumbersome to set up at first, don't worry--speed quickly comes with repetition.
 
@@ -156,29 +156,29 @@ console.log("hello world")
 
 > console.log() is just a way to log something in  our REPL.  
 
-## You do: [Data Types & Data Collections](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(20 minutes, 0:50)
+## You do: [Data Types & Data Collections](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(20 min, 0:50)
 
 Reference [Data Types And Collections](./data-types-and-collections.md) to complete the above exercise.
 
-## Break(10 minutes, 1:00)
+## Break(10 min, 1:00)
 
-## 10 Min Review (10 minutes, 1:10)
+## 10 Min Review (10 min, 1:10)
 
-## You do: [Booleans and Conditionals](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 minutes, 1:25)
+## You do: [Booleans and Conditionals](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 min, 1:25)
 
 Reference [Booleans and Conditionals](./booleans-and-conditionals.md) to complete the above exercise.
 
-## 10 Min Review (10 minutes, 1:35)
+## 10 Min Review (10 min, 1:35)
 
-## You do: [Loops and Fizzbuzz](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 mins, 1:50)
+## You do: [Loops and Fizzbuzz](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 min, 1:50)
 
 Reference [Loops](./loops.md) to complete the above exercise.
 
-# BREAK (10mins, 2:00)
+# BREAK (10min, 2:00)
 
 # Syntax & Semantic Naming
 
-## Syntax (5 minutes, 2:05)
+## Syntax (5 min, 2:05)
 
 ### Semicolons
 - General practice is to end every line with a semi-colon, though you may see JS code without any semi-colons.
@@ -211,13 +211,13 @@ Reference [Loops](./loops.md) to complete the above exercise.
   ```
 
 
-#### Comments
+## Comments (5 min, 2:10)
 
-Comments are an extremely important part of coding. They help us make sense out of our code, especially other people reading our code, or when we have walked away from some code and have completely forgotten what certain sections of it do (this happens much more quickly than you may imagine!). They are used to explain the purpose or reasoning behind a piece of code.
+Comments are an extremely important part of writing code. They help us make sense out of our code, especially other people reading our code, or when we have walked away from some code and have completely forgotten what certain sections of it do (this happens much more quickly than you may imagine!). They are used to explain the purpose or reasoning behind a piece of code.
 
 If you are working on a team, your documentation and commenting practices often translate to how easy you are to work with!
 
-Look out for future-you, and your colleagues!
+##### *Look out for future-you, and your colleagues, and write great comments!*
 
 
   ```javascript
@@ -231,7 +231,7 @@ Look out for future-you, and your colleagues!
   ```
 
 
-## Getting User Input & Conditionals
+## Getting User Input & Conditionals (10 min, 2:20)
 
 > These are the basic things you'll need to know for the HW.
 
@@ -274,13 +274,15 @@ if (age >= 21) {
 }
 ```
 
-## We Do: Pseudocode Temp Converter Part I
+## Temperature Converter (10 min, 2:30)
+
+### We Do: Pseudocode Temp Converter Part I
 
 Temperature conversion (Part I): [Temp Converter](https://github.com/ga-wdi-exercises/temperature_converter)
 
 Review
 
-## We Do: Pseudocode Temp Converter Part II
+### We Do: Pseudocode Temp Converter Part II
 
 Temperature conversion (Part II): [Temp Converter](https://github.com/ga-wdi-exercises/temperature_converter)
 
