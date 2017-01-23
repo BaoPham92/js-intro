@@ -19,11 +19,11 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
 
   ```javascript
   // For example...
-  var myClass = "WDI13";
+  var myClass = "WDI14";
 
   // After declaration you can then reference variables by just their name, without "var".
   myClass;
-  => "WDI13"
+  *returns:* "WDI14"
   ```
 
 - Javascript is a "dynamic" or "untyped" language, meaning a variable can switch between data types.
@@ -41,19 +41,19 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
   ```javascript
   // Addition
   10 + 2;
-  => 12
+  *returns:* 12
 
   // Subtraction
   10 - 2;
-  => 8
+  *returns:* 8
 
   // Multiplication
   10 * 2;
-  => 20
+  *returns:* 20
 
   // Division
   10 / 2;
-  => 5
+  *returns:* 5
   ```
 
 - Order of Operations: PEMDAS or **P**lease **E**xcuse **M**y **D**ear **A**unt **S**ally (Parenthetical expressions, Exponentiation, Multiplication, Division, Addition, Subtraction)
@@ -62,14 +62,14 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
   // This would be interpreted as...
   // Go through step by step with class.
   ( 4 + 2 ) * ( 12 / 3 );
-  => 6 * 4
-  => 24
+  *returns:* 6 * 4
+  *returns:* 24
 
   // How would this be interpreted?
   // Like operators are processed from left-to-right. In this case, division happens before multiplication.
   ( 8 / 4 * 2 ) + 1
-  => ( 2 * 2 ) + 1
-  => 5
+  *returns:* ( 2 * 2 ) + 1
+  *returns:* 5
   ```
 
 - % (Modulus)
@@ -78,7 +78,7 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
     ```javascript
     // What is the remainder of 12 / 5?
     12 % 5;
-    => 2
+    *returns:* 2
     ```
 
   - Q: Modulus has a pretty handy use case: to check if a number is even.
@@ -89,11 +89,11 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
       ```javascript
       // Returns 0 if even.
       4 % 2;
-      => 0
+      *returns:* 0
 
       // Returns 1 if odd.
       5 % 2;
-      => 1
+      *returns:* 1
       ```
 
 ### NaN ("Not a number")
@@ -101,14 +101,14 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
 
     ```javascript
     typeof NaN
-    => "number"
+    *returns:* "number"
     ```
 
   - You usually get NaN when the result of a math operation is not real (e.g., dividing 0 by 0, multiplying strings together).
 
     ```javascript
     0/0;
-    => NaN
+    *returns:* NaN
     ```
 
 - You can test whether a value is a valid number using the `isNaN()` function.
@@ -117,7 +117,7 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
 // isNaN returns false if used on a valid number.
 var myFavoriteNumber = 5;
 isNaN( myFavoriteNumber );
-=> false
+*returns:* false
 ```
 
 ## Undefined & Null
@@ -131,11 +131,11 @@ Undefined: automatically applied to a variable with no value.
 ```javascript
 // A primitive data type of type undefined with only one value: "undefined".
 typeof undefined;
-=> "undefined"
+*returns:* "undefined"
 
 // Any property that has not been assigned a value is "undefined".
 var nothing;
-=> undefined
+*returns:* undefined
 
 // A function with no defined return value has a return value of "undefined".
 
@@ -162,15 +162,15 @@ You might encounter this when dealing with numerical values but for whatever rea
 ```javascript
 // In some cases Javascript is helpful and converts strings to numbers in the correct way.
 "3" - "2"
-=> 1
+*returns:* 1
 
 // ...but sometimes it doesn't. In this example, the + operator acts as if it's concatenating two strings.
 "3" + "2"
-=> 32
+*returns:* 32
 
 // And this?
 "five" * 5;
-=> NaN
+*returns:* NaN
 ```
 
 When in doubt, convert data types that should be numbers using `parseInt()`.
@@ -178,10 +178,10 @@ When in doubt, convert data types that should be numbers using `parseInt()`.
 ```javascript
 // parseInt converts a string to a number value, if available.
 parseInt( "3" );
-=> 3
+*returns:* 3
 
 parseInt( "burrito" );
-=> NaN
+*returns:* NaN
 ```
 
 There are other examples of type coercion, but the point here isn't to remember them all. Just be aware that sometimes Javascript will fire weird results back at you with no explanation. Sometimes, type coercion might be the culprit.
@@ -209,12 +209,12 @@ var greeting = "Hi there!";
   ```javascript
   // "\n" = new line
   "Hello\nGoodbye"
-  =>"Hello"
-  =>"Goodbye"
+  *returns:*"Hello"
+  *returns:*"Goodbye"
 
   // "\t" = tab
   "\tOnce upon a time..."
-  => "     Once upon a time..."
+  *returns:* "     Once upon a time..."
   ```
 
 - You can check out more escape sequence examples [here](http://www.javascriptkit.com/jsref/escapesequence.shtml).  
@@ -227,7 +227,7 @@ var greeting = "Hi there!";
   var city = "Washington, ";
   var state = "DC";
   var address = city + state;
-  => "Washington, DC"
+  *returns:* "Washington, DC"
   ```
 
 - You can't, however, use other math operators on strings.
@@ -236,11 +236,11 @@ var greeting = "Hi there!";
   // Q: What do you think happens when we try to subtract strings from each other?
   // When using the "-" operator, the operands are treated as numbers.
   "hamburger" - "ham"
-  => NaN
+  *returns:* NaN
 
   // The same goes for multiplication and division.
   "hamburger" * 3
-  => NaN
+  *returns:* NaN
   ```
 
 String methods
@@ -252,12 +252,12 @@ String methods
   // String indexes are 0-based, so the index of a string's first character is 0.
   var greetings = "Hi there Nayana!";
   greetings.search( "Nayana" );
-  => 9
+  *returns:* 9
 
   // .slice(): return and store a portion of a string.
   var greetings = "Hi there Nayana!";
   var buddy = greetings.slice( 9, 15 );
-  => "Nayana"
+  *returns:* "Nayana"
   ```
 
 - More examples [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
@@ -283,11 +283,11 @@ var mountRushmore = new Array( "Washington", "Jefferson", "Roosevelt" );
 
 // Be careful when using the Array constructor. If you feed it a single numerical value, it will create an empty array of that length.
 var numbers = new Array( 5 );
-=> [ , , , , ]
+*returns:* [ , , , , ]
 
 // ...but if you feed it anything else, it will create a single-value array.
 var animals = new Array( "dog" );
-=> [ "dog" ]
+*returns:* [ "dog" ]
 ```
 
 Accessing array values...  
@@ -296,23 +296,23 @@ Accessing array values...
 // Indexing begins at 0.
 // How do I access the first, second and third elements of the array?
 mountRushmore[0];
-=> "Washington"
+*returns:* "Washington"
 mountRushmore[1];
-=> "Jefferson"
+*returns:* "Jefferson"
 mountRushmore[2];
-=> "Roosevelt"
+*returns:* "Roosevelt"
 
 mountRushmore.push("Lincoln");
 
 mountRushmore[3];
-=> "Lincoln"
+*returns:* "Lincoln"
 
 // You can also place arrays within arrays.
 var letters = [ ["a","b","c"], ["d","e","f"], ["g","h","i"] ];
 
 // How would I go about accessing the letter "f" in the above array? Walk me through it.
 letters[1][2];
-=> "f"
+*returns:* "f"
 ```
 
 Array methods
