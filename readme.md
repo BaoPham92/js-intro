@@ -23,13 +23,13 @@ HTML, CSS and Javascript are technologies are the basic components of front-end 
 
 #### If a web application or website were a building:
 
-- ##### HTML: Structure and Content
+##### HTML: Structure and Content
  HTML would be like the most stripped down version of that building, just the structure of the building and some content.
 
-- ##### CSS: Styling
+##### CSS: Styling
 CSS is responsible for the appearance of the building, adding granite floors, polished doors, wooden railings, etc. CSS styles the content of a website to look like more than just black text on a white background.
 
-- ##### Javascript: Behavior and Functionality
+##### Javascript: Behavior and Functionality
 Javascript might be like the building's elevator systems, ID-scanning & entry systems. Javascript handles interactivity and data.
 
 
@@ -40,18 +40,18 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
 * Why would you say a particular feature is "run" by Javascript instead of, say, CSS?
 
 ### Findings
-- #### Interactivity
+#### Interactivity
   - Javascript defines behavior on a webpage, what happens you interact with it.
   - Data changes in response to user actions
     - Like: increment Like counter.
     - Comment: submit comment, appended to post.
-- #### No Refreshes / User Experience (or UX)
+#### No Refreshes / User Experience (or UX)
   - When I click a cookie, CC is able to increment and update the counter on the page without a hard refresh.
   - When I comment on a post, Facebook is able to process my new comment and render it on the page without refreshing the entire page.
     - Gives the page a much smoother user experience compared to a static page that doesn't have this sort of functionality.
     - Imagine if Cookie Clicker just had an infinite number of static pages, one page for each quantity of cookies (html for 1 cookie, for 2 cookies, for 3 cookies, ... ∞ cookies...)
       - This would be terrible
-- #### Communication with Servers
+#### Communication with Servers
   - Javascript is somehow telling a server:
     0. That a user has taken a particular action (clicked a cookie, submitted a form, posted a post)
     0. To store some data associated with that interaction with the webpage
