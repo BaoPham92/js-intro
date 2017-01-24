@@ -14,6 +14,7 @@
 - Utilize loops to iterate through complex data types
 
 ## Framing
+
 We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS but not nearly enough! How can we start to add logic, data-handling, and behaviors to our web apps? .. Enter javascript.
 
 # HTML, CSS and Javascript (20 min, 0:20)
@@ -48,7 +49,7 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
     - Like: increment Like counter.
     - Comment: submit comment, appended to post.
 
-#### No Refreshes / User Experience (or UX)
+#### No Refreshes: User Experience (UX)
 
   - When I click a cookie, CC is able to increment and update the counter on the page without a hard refresh.
   - When I comment on a post, Facebook is able to process my new comment and render it on the page without refreshing the entire page.
@@ -159,21 +160,31 @@ console.log("hello world")
 
 # Intro to Javascript Fundamentals
 
-## You do: [Data Types & Data Collections](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(20 min, 0:50)
+## Your Own Personal JS
+
+This section is structured as guided individual practice. The goal behind this exercise this is to increase *your own personal familiarity* with Javascript, through seeing ***output*** of different, individual javascript ***expressions***.
+
+
+1. **Clone** down [this repo here](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md).
+2. In atom, open `exercise.md` to use as the worksheet to work with the following 3 sections:
+
+## We do: Data Types & Data Collections (20 min, 0:50)
+
+Let's talk about what the different data types are in Javascript. Click the link below!
 
 Reference [Data Types And Collections](./data-types-and-collections.md) to complete the above exercise.
 
 
 ## 10 Min Review (10 min, 1:00)
 
-- Type Coercion
-- Accessing values in collections and objects
 - 5 types of Primitives
 - Composite Data Types
+- Type Coercion
+- Accessing values in arrays and objects
 
 ## Break (10 min, 1:10)
 
-## You do: [Booleans and Conditionals](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 min, 1:25)
+## You do: Booleans and Conditionals (15 min, 1:25)
 
 Reference [Booleans and Conditionals](./booleans-and-conditionals.md) to complete the above exercise.
 
