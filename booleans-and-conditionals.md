@@ -4,8 +4,12 @@
 
 Two values: `true`, `false`.  To be clear, these are not strings, but the concepts of true and false.
 
+### Comparison Operators
+
+> Note: Not to be confused with the assignment operator `=`! This can be tricky/counter-intuitive for those new to programming!
+
 Oftentimes you'll be producing boolean values when comparing two values
-- Comparison operators: `==`, `===`, `<`, `>`, `<=`, `>=`
+- Examples of comparison operators: `==`, `===`, `<`, `>`, `<=`, `>=`
 
 ```javascript
 1 === 1
@@ -20,7 +24,7 @@ Oftentimes you'll be producing boolean values when comparing two values
 
 > What is the differences between the last two? When using `===`, it checks for both the data type and value. `==` only checks for value. Under the hood, though, `==` converts the data type to the same data type and then executes comparison.
 
-## true vs false (5/115)
+## truthy vs falsey
 So we all know the boolean values of `true` and `false` But there is also a concept of "truthy" and "falsey" In Javascript, the following things are "falsey":
 - false
 - 0 (zero)
@@ -31,7 +35,7 @@ So we all know the boolean values of `true` and `false` But there is also a conc
 
 > Everything else is "truthy". Why might we need this programmatic concept of "truthy" and "falsey"?(ST-WG)
 
-## Comparison Operators (5/120)
+## Comparison Operators
 
 - `&&`
 - `||`
@@ -60,7 +64,7 @@ Let's check out comparison operators in node. node is a server side Javascript e
 => false
 ```
 
-## Conditionals (15/135)
+## Conditionals
 
 Let' talk through the following code (10m)
 

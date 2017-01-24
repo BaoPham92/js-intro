@@ -26,7 +26,7 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
   // returns "WDI14"
   ```
 
-- Javascript is a "dynamic" or "untyped" language, meaning a variable can switch between data types.
+- Javascript is a "dynamically typed" language, meaning a variable can switch between data types.
 
   ```javascript
   // This change is valid in Javascript.
@@ -254,10 +254,12 @@ String methods
   greetings.search( "Nayana" );
   // returns 9
 
-  // .slice(): return and store a portion of a string.
+  // .substr(): return and store a portion of a string.
   var greetings = "Hi there Nayana!";
-  var buddy = greetings.slice( 9, 15 );
+  var buddy = greetings.substr( 9, 15 );
   // returns "Nayana"
+  var buddy = greetings.slice( 9, 15 );
+  // also returns "Nayana"
   ```
 
 - More examples [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
