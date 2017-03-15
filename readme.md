@@ -19,7 +19,7 @@ We've dabbled with HTML and CSS. There's a bit of interactivity we can program t
 
 # HTML, CSS and Javascript (20 min, 0:20)
 
-HTML, CSS and Javascript are technologies are the basic components of front-end development. Front-end frameworks and libraries that add "layers of abstraction" (the ability to do more with less code) make use of these three technologies.
+HTML, CSS and Javascript are technologies which serve as the basic components of front-end development. Front-end frameworks and libraries that add "layers of abstraction" (the ability to do more with less code) make use of these three technologies.
 
 
 #### If a web application or website were a building:
@@ -46,8 +46,9 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
 
   - Javascript defines behavior on a webpage, what happens you interact with it.
   - Data changes in response to user actions
-    - Like: increment Like counter.
-    - Comment: submit comment, appended to post.
+    - Clicking the cookie: increment a cookie total.
+    - Like (FB): increment Like counter.
+    - Comment (FB): submit comment, appended to post.
 
 #### No Refreshes: User Experience (UX)
 
@@ -59,15 +60,15 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
 
 #### Communication with Servers
 
-  - Javascript is somehow telling a server:
-    0. That a user has taken a particular action (clicked a cookie, submitted a form, posted a post)
-    0. To store some data associated with that interaction with the webpage
+  - Javascript is somehow talking to a server
+    0. Giving notice that a user has taken a particular action (clicked a cookie, submitted a form, posted a post)
+    0. Asking it store some data associated with that interaction with the webpage
     (cookie quantity, form data, contents of a post)
-    0. To display the results of that user-website interaction (updated cookie quantity, new user account log-in, new post on everyone's feed)
+    0. Being told display the results of that user-website interaction (updated cookie quantity, new user account log-in, new post on everyone's feed)
 
 This is not an exhaustive list of Javascript properties, but we'll go over these and more in more detail later on in the course.
 
-So, to sum up the main three components of front-end web development up in one word each...
+So, to sum up the main three components of front-end web development up in one word each (Hint: remember the Building example)
 - HTML: Structure
 - CSS: Styling
 - Javascript: Behavior
@@ -165,8 +166,8 @@ console.log("hello world")
 This section is structured as guided individual practice. The goal behind this exercise this is to increase *your own personal familiarity* with Javascript, through seeing ***output*** of different, individual javascript ***expressions***.
 
 
-1. **Clone** down [this repo here](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md).
-2. In atom, open `exercise.md` to use as the worksheet to work with the following 3 sections:
+1. **Clone** down the [data types repo here](https://github.com/ga-wdi-exercises/js-data-types).
+2. In atom, open [exercise.md](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md) to use as the worksheet to work with the following 3 sections:
 
 ## We do: Data Types & Data Collections (20 min, 0:50)
 
