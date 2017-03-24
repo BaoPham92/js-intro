@@ -1,21 +1,18 @@
 # LEARNING OBJECTIVES
 
 - Describe the role Javascript plays alongside HTML and CSS.
-- List and describe the primitive data types.
-- Define and use complex data types.
+- List and describe the primitive data types and common complex data types.
 - Practice proper JS syntax and semantic variable naming.
 - Describe uses of mathematical operators in Javascript.
 - Define type coercion.
 - Explain the difference between `prompt` and `console.log`
 - Differentiate between `true` & `false` && ***truthy*** & ***falsey***
-- Write an if, else if, and else statement in JS
-- Describe why control flow is utilized in computer programming
-- Write a for loop and while loop in JS and differentiate between them
-- Utilize loops to iterate through complex data types
+- Write an if, else if, and else statement in JS and describe how control flow is used in programming
+- Write a for loop and while loop, differentiate between them and use loops to iterate through complex data types
 
 ## Framing
 
-We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS but not nearly enough! How can we start to add logic, data-handling, and behaviors to our web apps? .. Enter javascript.
+We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS (think `hover`) but not nearly enough! How can we start to add logic, data-handling, and behaviors to our web apps? .. Enter javascript.
 
 # HTML, CSS and Javascript (20 min, 0:20)
 
@@ -35,7 +32,7 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
 
 
 ## Think-Pair-Share: Identify Javascript features in Cookie Clicker.
-* 2 minutes: Go look at [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) . Play with it. Think about what's allowing these behaviors to exist.
+* 2 minutes: Go look at [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) . Play with it. Think about how the page responds to your actions (clicks). What's allowing these behaviors to exist.
 * 3 minutes: Discuss and compare findings in pairs.
 * Think about what functionality the site has after it has loaded.
 * Why would you say a particular feature is "run" by Javascript instead of, say, CSS?
@@ -176,103 +173,6 @@ Let's talk about what the different data types are in Javascript.
 Reference [Data Types And Collections](./data-types-and-collections.md) to complete the above exercise.
 
 
-### Data Types
-
-For each expression, predict an output in a comment (`//`), ***without first running the command***. Think back to the data types we just covered. Then below your prediction/hypothesis, write the actual output.
-
-###### Example:
-
-```js
-typeof("potato");
-//prediction: vegetable
-//actual: String
-```
-
-What is the ***return value*** or ***output*** of each of the expressions below?
-
-```js
-typeof( 15 );
-// Include your answer below each line using a comment, like this.
-// Then, include the actual output of the command entered, in this case, the output of typeof( 15 );
-
-typeof( 5.5 );
-typeof( NaN );
-typeof( "hello" );
-typeof( true )
-typeof( 1 != 2 );
-
-// use typeof to evaluate the expressions below:
-"hamburger" + "s";
-"hamburgers" - "s";
-"1" + "3"
-"1" - "3"
-"johnny" + 5;
-"johnny" - 5
-99 * "luftbaloons";
-```
-
-What's going on in the second half of the previous question? Are there any "rules" we can pull from those examples?
-
-### Data Collections
-
-#### Arrays
-
-Javascript provides us with a number of native methods that allow us to interact with arrays. Find methods that do each of the following and provide an example...
-* Add an element to the back of an array.
-* Remove an element from the back of an array.
-* Add an element to the front of an array.
-* Remove an element from the front of an array.
-* Concatenates all the elements in an array into a string.
-* Separates the characters of a string into an array.
-
-```js
-// Your answers go here.
-```
-
-What will the contents of the below arrays be after the code samples are executed? Come up with an answer yourself before testing it out in the console.
-> **HINT:** You might find it helpful to draw the arrays out as you run each line of code.
-
-```js
-var numbers = [ 2, 4, 6, 8 ];
-numbers.pop();
-numbers.push( 10 );
-numbers.unshift( 3 );
-```
-
-```
-Your answer goes here.
-```
-
-What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
-
-```js
-var morse = [ "dot", "pause", "dot" ];
-var moreMorse = morse.join( " dash " );
-moreMorse.split( " " );
-```
-
-```
-Your answer goes here.
-```
-
-What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
-
-```js
-var bands = [];
-var beatles = [ "Paul", "John", "George", "Pete" ];
-var stones = [ "Brian", "Mick", "Keith", "Ronnie", "Charlie" ];
-bands.push( beatles );
-bands.unshift( stones );
-bands[ bands.length - 1 ].pop();
-bands[0].shift();
-bands[1][3] = "Ringo";
-```
-
-```
-Your answer goes here.
-```
-
-
 ## 10 Min Review (10 min, 1:00)
 
 - 5 types of Primitives
@@ -285,93 +185,6 @@ Your answer goes here.
 ## You do: Booleans and Conditionals (15 min, 1:25)
 
 Reference [Booleans and Conditionals](./booleans-and-conditionals.md) to complete the above exercise.
-
-### Booleans & Comparison Operators
-
-Here's an example truth table for the `!` (not) operation. In it, we're listing the values of `!a` that correspond with a given value of `a`.
-
-|a|!a|
-|---|---|
-|true|false|
-|false|true|
-
-Fill out the truth tables below for `&&` (and), `||` (or) and one that uses multiple comparison operators. All you need to do is replace the `?`'s with either `true` or `false`.
-> **NOTE:** Because of markdown formatting, `||` and `&&` have been replaced with `OR` and `AND` respectively.  
-> **HINT:** With the last one, it may be helpful to add additional columns to the table for each individual comparison.  
-
-| a | b | a AND b |
-| --- | --- | --- |
-| true | true | ? |
-| true | false | ? |
-| false | true | ? |
-| false | false | ? |
-
-|a|b|a OR b|
-|---|---|---|
-|true|true|?|
-|true|false|?|
-|false|true|?|
-|false|false|?|
-
-|a|b|a `!=` b|
-|---|---|---|
-|3|3|?|
-|1|5|?|
-|2|"2"|?|
-
-|a|b|!a AND (a OR b)|
-|---|---|---|
-|true|true|?|
-|true|false|?|
-|false|true|?|
-|false|false|?|
-
-#### "Truthiness" and "Falsiness"
-
-You've seen the boolean values of `true` and `false`.
-
-There is also a concept of "truthy" and "falsey". In Javascript, the following things are "falsey":
-
-- `false`
-- `0` (zero)
-- `""` (empty string)
-- `null`
-- `undefined`
-- `NaN` (a special Number value meaning- Not-a-Number!)
-
-Everything else is "truthy".
-
-These do the same thing:
-
-```js
-var name = '';
-if(name == ''){
-  alert('Enter your name, please');
-}
-if(!name){
-  alert('Enter your name, please');
-}
-```
-
-### Conditionals
-
-You're a bouncer at a bar! Given an `age` variable, create a conditional that satisfies the following requirements...
-* If a patron is older than `21`, print out `"Come on in!"`.
-* If a patron is between `18` and `21`, print out `"Come on in (but no drinking)!"`.
-* If a patron is younger than 18, print out `"You're too young to be in here!"`.
-* If a patron is older than 75, print out `"Are you sure you want to be here?"`.
-
-```js
-// Your answer goes here.
-```
-
-### Loops
-
-Your task is to create a loop that prints out all the odd numbers between 1 and 100...twice! Use a different type of Javascript loop each time.
-
-```js
-// Your answer goes here.
-```
 
 ## 10 Min Review (10 min, 1:35)
 
@@ -412,6 +225,8 @@ Your output should look something like this...
 ### Semicolons
 - General practice is to end every line with a semi-colon, though you may see JS code without any semi-colons.
 - Usage depends on the developer.
+
+### What does it mean for something to be named "semantically"?
 
 ### camelCase: The Javascript Variable-naming Convention
   - First letter of first word lowercase.
