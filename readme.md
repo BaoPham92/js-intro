@@ -1,25 +1,22 @@
 # LEARNING OBJECTIVES
 
 - Describe the role Javascript plays alongside HTML and CSS.
-- List and describe the primitive data types.
-- Define and use complex data types.
+- List and describe the primitive data types and common complex data types.
 - Practice proper JS syntax and semantic variable naming.
 - Describe uses of mathematical operators in Javascript.
 - Define type coercion.
 - Explain the difference between `prompt` and `console.log`
 - Differentiate between `true` & `false` && ***truthy*** & ***falsey***
-- Write an if, else if, and else statement in JS
-- Describe why control flow is utilized in computer programming
-- Write a for loop and while loop in JS and differentiate between them
-- Utilize loops to iterate through complex data types
+- Write an if, else if, and else statement in JS and describe how control flow is used in programming
+- Write a for loop and while loop, differentiate between them and use loops to iterate through complex data types
 
 ## Framing
 
-We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS but not nearly enough! How can we start to add logic, data-handling, and behaviors to our web apps? .. Enter javascript.
+We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS (think `hover`) but not nearly enough! How can we start to add logic, data-handling, and behaviors to our web apps? .. Enter javascript.
 
 # HTML, CSS and Javascript (20 min, 0:20)
 
-HTML, CSS and Javascript are technologies are the basic components of front-end development. Front-end frameworks and libraries that add "layers of abstraction" (the ability to do more with less code) make use of these three technologies.
+HTML, CSS and Javascript are technologies which serve as the basic components of front-end development. Front-end frameworks and libraries that add "layers of abstraction" (the ability to do more with less code) make use of these three technologies.
 
 
 #### If a web application or website were a building:
@@ -35,7 +32,7 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
 
 
 ## Think-Pair-Share: Identify Javascript features in Cookie Clicker.
-* 2 minutes: Go look at [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) . Play with it. Think about what's allowing these behaviors to exist.
+* 2 minutes: Go look at [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) . Play with it. Think about how the page responds to your actions (clicks). What's allowing these behaviors to exist.
 * 3 minutes: Discuss and compare findings in pairs.
 * Think about what functionality the site has after it has loaded.
 * Why would you say a particular feature is "run" by Javascript instead of, say, CSS?
@@ -46,8 +43,9 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
 
   - Javascript defines behavior on a webpage, what happens you interact with it.
   - Data changes in response to user actions
-    - Like: increment Like counter.
-    - Comment: submit comment, appended to post.
+    - Clicking the cookie: increment a cookie total.
+    - Like (FB): increment Like counter.
+    - Comment (FB): submit comment, appended to post.
 
 #### No Refreshes: User Experience (UX)
 
@@ -59,15 +57,15 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
 
 #### Communication with Servers
 
-  - Javascript is somehow telling a server:
-    0. That a user has taken a particular action (clicked a cookie, submitted a form, posted a post)
-    0. To store some data associated with that interaction with the webpage
+  - Javascript is somehow talking to a server
+    0. Giving notice that a user has taken a particular action (clicked a cookie, submitted a form, posted a post)
+    0. Asking it to store some data associated with that interaction with the webpage
     (cookie quantity, form data, contents of a post)
-    0. To display the results of that user-website interaction (updated cookie quantity, new user account log-in, new post on everyone's feed)
+    0. Being told to display the results of that user-website interaction (updated cookie quantity, new user account log-in, new post on everyone's feed)
 
 This is not an exhaustive list of Javascript properties, but we'll go over these and more in more detail later on in the course.
 
-So, to sum up the main three components of front-end web development up in one word each...
+So, to sum up the main three components of front-end web development up in one word each (Hint: remember the Building example)
 - HTML: Structure
 - CSS: Styling
 - Javascript: Behavior
@@ -165,12 +163,12 @@ console.log("hello world")
 This section is structured as guided individual practice. The goal behind this exercise this is to increase *your own personal familiarity* with Javascript, through seeing ***output*** of different, individual javascript ***expressions***.
 
 
-1. **Clone** down [this repo here](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md).
-2. In atom, open `exercise.md` to use as the worksheet to work with the following 3 sections:
+1. **Clone** down the [data types repo here](https://github.com/ga-wdi-exercises/js-data-types).
+2. In atom, open [exercise.md](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md) to use as the worksheet to work with the following 3 sections:
 
 ## We do: Data Types & Data Collections (20 min, 0:50)
 
-Let's talk about what the different data types are in Javascript. Click the link below!
+Let's talk about what the different data types are in Javascript.
 
 Reference [Data Types And Collections](./data-types-and-collections.md) to complete the above exercise.
 
@@ -193,9 +191,9 @@ Reference [Booleans and Conditionals](./booleans-and-conditionals.md) to complet
 - Truthy vs Falsey
 - Purpose of Control Flow
 
-## You do: [Loops and Fizzbuzz](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 min, 1:50)
+## You do: Loops and Fizzbuzz (15 min, 1:50)
 
-Reference [Loops](./loops.md) to complete the above exercise.
+Reference [Loops](./loops.md) to complete the exercise.
 
 ## 10 Min Review (10 min, 2:00)
 
@@ -210,6 +208,8 @@ Reference [Loops](./loops.md) to complete the above exercise.
 ### Semicolons
 - General practice is to end every line with a semi-colon, though you may see JS code without any semi-colons.
 - Usage depends on the developer.
+
+### What does it mean for something to be named "semantically"?
 
 ### camelCase: The Javascript Variable-naming Convention
   - First letter of first word lowercase.

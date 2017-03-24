@@ -19,11 +19,11 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
 
   ```javascript
   // For example...
-  var myClass = "WDI14";
+  var myClass = "WDI15";
 
   // After declaration you can then reference variables by just their name, without "var".
   myClass;
-  // returns "WDI14"
+  // returns "WDI15"
   ```
 
 - Javascript is a "dynamically typed" language, meaning a variable can switch between data types.
