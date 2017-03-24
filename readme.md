@@ -59,9 +59,9 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
 
   - Javascript is somehow talking to a server
     0. Giving notice that a user has taken a particular action (clicked a cookie, submitted a form, posted a post)
-    0. Asking it store some data associated with that interaction with the webpage
+    0. Asking it to store some data associated with that interaction with the webpage
     (cookie quantity, form data, contents of a post)
-    0. Being told display the results of that user-website interaction (updated cookie quantity, new user account log-in, new post on everyone's feed)
+    0. Being told to display the results of that user-website interaction (updated cookie quantity, new user account log-in, new post on everyone's feed)
 
 This is not an exhaustive list of Javascript properties, but we'll go over these and more in more detail later on in the course.
 
