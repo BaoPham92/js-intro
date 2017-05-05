@@ -17,7 +17,7 @@ There are five primitive data types that are used most commonly used in Javascri
 We store data types in variables. A variable is a "bucket" that holds data. You can pass the bucket around, empty it, refill it, etc.
 
 ```js
-var myClass = "WDI15"
+var myClass = "WDI16"
 // var - indicates a variable is being defined
 // myClass - the name of the variables
 // "WDI15" - the value being assigned to the variable
@@ -281,29 +281,16 @@ Composite data types are collections that allow us to store multiple data types.
 Arrays are ordered collection of related data types and are organized by index.
 - Indexing begins at 0 (e.g., first element in an array has an index of 0, the second has an index of 1, and so on).
 
-There are two ways to instantiate an array...  
+We instantiate an array like this...
 
 ```js
 // Instantiate with an array literal.
 var mountRushmore = [ "Washington", "Jefferson", "Roosevelt" ]
-
-// Can also instantiate using the Array constructor. Constructors are like regular functions used with the "new" keyword. Useful for creating similar objects.
-var mountRushmore = new Array("Washington", "Jefferson", "Roosevelt")
-
-// Be careful when using the Array constructor. If you feed it a single numerical value, it will create an empty array of that length.
-var numbers = new Array(5)
-// returns [ , , , , ]
-
-// ...but if you feed it anything else, it will create a single-value array.
-var animals = new Array("dog")
-// returns [ "dog" ]
 ```
 
-Accessing array values...  
+And access its values like so...
 
 ```js
-var mountRushmore = [ "Washington", "Jefferson", "Roosevelt" ]
-
 mountRushmore[0]
 // => "Washington"
 
