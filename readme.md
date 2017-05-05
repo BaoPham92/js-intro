@@ -285,10 +285,6 @@ if (age >= 21) {
 - General practice is to end every line with a semi-colon, though you may see JS code without any semi-colons
 - Usage depends on the developer
 
-### Semantic Naming
-
-<!-- AM: Need to add content -->
-
 ### camelCase
 
 Javascript variables and function names are written using camel case syntax. That works
