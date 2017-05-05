@@ -93,7 +93,11 @@ true || false
 
 ## Conditionals
 
-<!-- AM: Add intro text -->
+A common feature of programming languages is conditional blocks. With these blocks, we can execute different pieces of code depending on whether a condition(s) is met.
+
+Consider the following example...
+
+<!-- AM: Change this example so it's less like the bouncer one they're supposed to do. -->
 
 ```javascript
 var age = 24;
@@ -108,23 +112,6 @@ else{
 }
 ```
 
+> Note the order in which these conditionals are written. What would happen if we switched the conditions and content of the `if` and `else if` statements?
+
 Conditionals will always follow this pattern. There is a key word (`if`, `else if`, `else`), followed by an expression that will evaluate to true or false in parentheses, followed by code to execute when the condition is met.
-
-### Whitelisting vs. Blacklisting
-
-<!-- AM: Remove this? This is exactly what the conditional exercise is... -->
-
-What's wrong with the following code?:
-
-```javascript
-var age = 24;
-if(age > 21){
-  console.log("Come on in!")
-}
-else if(age > 75){
-  console.log("Come on in, but I don't know if this is the place for you!")
-}
-else{
-  console.log("get outta here youngin!")
-}
-```

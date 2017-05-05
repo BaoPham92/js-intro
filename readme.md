@@ -40,9 +40,7 @@ Javascript might be like the building's elevator systems, ID-scanning & entry sy
 
 **Spend 2 minutes** playing with [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/). Think about how the page responds to your actions. What is allowing these behaviors to exist?
 
-**Spend 3 minutes** comparing your individual findings in pairs. In particular, discuss the following...
-* What functionality does the site have **after it has loaded**?
-* Why would you say a particular feature is "run" by Javascript instead of CSS or HTML?
+**Spend 3 minutes** comparing your individual findings in pairs. With your partner, file an issue on the lesson repo including three features that you think are powered by Javascript.
 
 ### Findings
 
@@ -94,7 +92,7 @@ Brief history: Javascript was created in 10 days by [Brendan Eich](https://en.wi
 
 Barriers to entry for learning Javascript are very low. No additional software required to run it. Just a text editor and a browser.
 - You can even run it directly in the browser via its Javascript console.
-- Ex. Hide images on the GA website.
+- Ex. hide images on the GA website.
 
 Javascript is supported by all web browsers.
 - [Some browsers](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs) support more features than others
@@ -138,7 +136,6 @@ We're going to spend the next few minutes learning how to set up our development
 
 You can also put your script tag in the head. Putting the tag in the body ensures that the rest of the page loads before your script files run. Also of note, [HTML5 added two attributes ](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html) that increase control when scripts load and run.
 
-
 <a name="openinchrome"></a>
 ## Open Chrome & Dev Tools
 
@@ -176,41 +173,38 @@ console.log("hello world")
 
 The rest of the lesson consists of guided exercises. The goal behind these is to increase your familiarity with Javascript by analyzing the output of different Javascript expressions.
 
+For each exercise you will be working in pairs.
+
 ### Setup
 
 1. Clone down the [data types repo here](https://github.com/ga-wdi-exercises/js-data-types)
 2. In Atom, open [exercise.md](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md). You will use this as the worksheet for the next three exercises.
 
-## You Do: Data Types & Data Collections (30 minutes / 1:00)
+## You Do: Data Types & Data Collections (25 minutes / 0:55)
 
-> 10 minutes reading. 20 minutes exercise
+Complete the **Data Types** and **Data Collections** exercises in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
 
-1. Spend 10 minutes reading [Data Types And Collections](./data-types-and-collections.md)
-2. Spend 20 minutes completing the **Data Types** and **Data Collections** exercises in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
+> You can use the [Data Types And Collections](./data-types-and-collections.md) readme as reference and review.
 
-## Review (10 minutes / 1:10)
+### Review (10 minutes / 1:05)
 
-## Break (10 minutes / 1:20)
+## Break (10 minutes / 1:15)
 
-## You Do: Booleans & Conditionals (25 minutes / 1:45)
+## You Do: Booleans & Conditionals (25 minutes / 1:40)
 
-> 10 minutes reading. 15 minutes exercise
+Complete the **Booleans & Comparison Operators** and **Conditionals** exercises in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
 
-1. Spend 10 minutes reading [Booleans and Conditionals](./booleans-and-conditionals.md)
-2. Spend 20 minutes completing the **Booleans & Comparison Operators** and **Conditionals** exercises in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
+> You can use the [Booleans and Conditionals](./booleans-and-conditionals.md) readme as reference and review.
 
-## Review (10 minutes / 1:55)
+### Review (10 minutes / 1:50)
 
-## You Do: Loops (20 minutes / 2:15)
+## You Do: Loops (20 minutes / 2:10)
 
-> 10 minutes reading. 10 minutes exercise
+Complete the **Loops** exercise in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
 
-1. Spend 10 minutes reading [Loops](./loops.md)
-2. Spend 10 minutes completing the **Loops** exercise in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
+> You can use the [Loops](./loops.md) readme as reference and review.
 
-> There is also a FizzBuzz bonus exercise!
-
-## Review (10 minutes / 2:25)
+### Review (10 minutes / 2:20)
 
 ---------
 
@@ -218,7 +212,7 @@ The rest of the lesson consists of guided exercises. The goal behind these is to
 
 ## Getting User Input & Conditionals
 
-> These are the basic things you'll need to know for the HW.
+**You will need to read the following sections to complete this lesson's homework assignment.**
 
 ### `.prompt()`
 
@@ -273,12 +267,12 @@ if (age >= 21) {
 ## Review Questions
 
 1. When would you use an array over an object? And vice-versa?
-- What is the difference between `undefined` and `null`?
-- Provide an example of a semantically-named variable. Explain your choice.
-- What role does Javascript play on a website?
-- What are the five primitive data types?
-- What are the two composite data types? When would you use each?
-- What is an example of type coercion?
+2. What is the difference between `undefined` and `null`?
+3. Provide an example of a semantically-named variable. Explain your choice.
+4. What role does Javascript play on a website?
+5. What are the five primitive data types?
+6. What are the two composite data types? When would you use each?
+7. What is an example of type coercion?
 
 ## Additional Exercises
 
