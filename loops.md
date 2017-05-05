@@ -1,44 +1,60 @@
 # Loops
 
-### For loop
-There are two ways to write a for loop.
+There are times when we will want to execute the same piece of code multiple times. Loops are a common programming language feature that enable us to do this. Javascript has three types of loops that we will look at today...
 
-#### The first:
+## `for` loop
 
-```javascript
+```js
 for(var i = 0; i < 10; i++){
   console.log(i)
 }
 ```
-The first part is the keyword `for`.
-Followed by 3 parts `;` separated in parentheses.
-- The first part instantiates the iteratee. Essentially gives you access to this value in your code block as i. It starts at 0 in this case.
-- The second part is the comparison expression. That means this code will continue to execute until this expression evaluates to false.
-- The third and final part is how much the iteratee is incremented after each execution of the loop
 
-#### The second:
+The loop is indicated with the keyword `for` followed parentheses that contain 3 parts separate by `;`...
+  1. Instantiates the iteratee (in this example, `i`). `i` begins at 0 and will increase throughout the loops execution. `i` can be accessed within the loop.
+  2. The comparison expression. The loop will continue to execute until this expression evaluates to false.
+  3. How much the iteratee is incremented after each execution of the loop. In this example, `i` will increase by 1 after each iteration of the loop.
 
-```javascript
-// instantiate an array of names
+The actual content of the loop is located within the trailing curly brackets. In this example, `console.log(i)` will be executed ten times.
+
+Oftentimes we will use a `for` loop to iterate through an array. That means we will want the loop to execute as many times as there are items in that array. Take a look at this example...
+
+```js
+var names = ["tyler", "nayana", "andy", "adrian", "nick", "jesse", "james"]
+for(var i = 0; i < names.length; i++){
+  console.log(names[i])
+}
+```
+
+> This loop will run 7 times because the length of the array is 7. Each iteration of the loop will print out whichever name exists at index `i` within the array.
+
+## `for in` loop
+
+The `for in` loop functions similar to the `for` loop, but it is only used when iterating through a collection.
+
+```js
 var names = ["tyler", "nayana", "andy", "adrian", "nick", "jesse", "james"]
 for(i in names){
   console.log(names[i])
 }
 ```
 
-- Again this for loop starts with the keyword `for`.
-- In parentheses contains the iteratee followed by the keyword `in` followed by the complex data type you would like to iterate over(array or object)
-- In the brackets contains the code you would like executed for each iteration of the loop
+* Also begins with the keyword `for`
+* The parentheses contain the iteratee (the variable representing the index), followed by the keyword `in`, followed by the complex data type you would like to iterate over (either array or object)
 
-### You Do - Write a for loop that prints odd numbers to 100. Do not use conditionals
 
-### While Loop(15m)
-```javascript
+### While Loop
+
+A `while` loop will keep running so long as its condition evaluates to true. It does not require an iteratee or increment value.
+
+Here is an example that counts up to 10.
+
+```js
 var i = 0;
-while(i < 10){
+while(i <= 10){
   console.log(i)
-  // don't increment at first
+  i++
 }
 ```
-#### ST-WG
-What are the differences between `for` and `while`?
+
+> What would happen if `i++` was removed from this example?
