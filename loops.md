@@ -1,11 +1,10 @@
 # Loops
 
-### For loop
-There are two ways to write a for loop.
+## `for` loop
 
-#### The first:
+<!-- AM: Add some intro text -->
 
-```javascript
+```js
 for(var i = 0; i < 10; i++){
   console.log(i)
 }
@@ -16,29 +15,29 @@ Followed by 3 parts `;` separated in parentheses.
 - The second part is the comparison expression. That means this code will continue to execute until this expression evaluates to false.
 - The third and final part is how much the iteratee is incremented after each execution of the loop
 
-#### The second:
+## `for in` loop
 
-```javascript
-// instantiate an array of names
+<!-- AM: Add some intro text -->
+
+```js
 var names = ["tyler", "nayana", "andy", "adrian", "nick", "jesse", "james"]
 for(i in names){
   console.log(names[i])
 }
 ```
 
-- Again this for loop starts with the keyword `for`.
-- In parentheses contains the iteratee followed by the keyword `in` followed by the complex data type you would like to iterate over(array or object)
-- In the brackets contains the code you would like executed for each iteration of the loop
+- Also begins with the keyword `for`
+- The parentheses contain the iteratee (the variable representing the index), followed by the keyword `in`, followed by the complex data type you would like to iterate over (either array or object)
 
-### You Do - Write a for loop that prints odd numbers to 100. Do not use conditionals
 
-### While Loop(15m)
-```javascript
+### While Loop
+
+<!-- AM: Needs some intro text -->
+<!-- AM: Need to update example -->
+
+```js
 var i = 0;
 while(i < 10){
   console.log(i)
-  // don't increment at first
 }
 ```
-#### ST-WG
-What are the differences between `for` and `while`?
