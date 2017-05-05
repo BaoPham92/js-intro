@@ -76,12 +76,12 @@ Like normal math, Javascript follows the traditional order of operations: P.E.M.
   6. Subtraction)
 
 ```js
-( 4 + 2 ) * ( 12 / 3 )
+(4 + 2) * (12 / 3)
 // => 6 * 4
 // => 24
 
-( 8 / 4 * 2 ) + 1
-// => ( 2 * 2 ) + 1
+(8 / 4 * 2) + 1
+// => (2 * 2) + 1
 // => 5
 ```
 
@@ -188,11 +188,11 @@ You might encounter this when dealing with numerical values but for whatever rea
 When in doubt, convert data types that should be numbers using `parseInt()`.
 
 ```js
-parseInt( "3" )
+parseInt("3")
 // => 3
 // parseInt converts a string to a number value, if available.
 
-parseInt( "burrito" )
+parseInt("burrito")
 // => NaN, because "burrito" cannot be converted into a number
 ```
 
@@ -288,14 +288,14 @@ There are two ways to instantiate an array...
 var mountRushmore = [ "Washington", "Jefferson", "Roosevelt" ]
 
 // Can also instantiate using the Array constructor. Constructors are like regular functions used with the "new" keyword. Useful for creating similar objects.
-var mountRushmore = new Array( "Washington", "Jefferson", "Roosevelt" )
+var mountRushmore = new Array("Washington", "Jefferson", "Roosevelt")
 
 // Be careful when using the Array constructor. If you feed it a single numerical value, it will create an empty array of that length.
-var numbers = new Array( 5 )
+var numbers = new Array(5)
 // returns [ , , , , ]
 
 // ...but if you feed it anything else, it will create a single-value array.
-var animals = new Array( "dog" )
+var animals = new Array("dog")
 // returns [ "dog" ]
 ```
 
