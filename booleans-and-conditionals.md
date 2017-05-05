@@ -95,23 +95,21 @@ true || false
 
 A common feature of programming languages is conditional blocks. With these blocks, we can execute different pieces of code depending on whether a condition(s) is met.
 
-Consider the following example...
-
-<!-- AM: Change this example so it's less like the bouncer one they're supposed to do. -->
+Consider the following example demonstrating a very simple version of the card game War...
 
 ```javascript
-var age = 24;
-if(age < 18) {
-  console.log("You're too young to enter this club! Get outta here")
+var playerOneCard = 6
+var playerTwoCard = 10
+
+if(playerOneCard < playerTwoCard) {
+  console.log("Player two wins this round!")
 }
-else if(age >= 18 && age < 21){
-  console.log("Come on in! But no Drinking!!")
+else if(playerOneCard > playerTwoCard){
+  console.log("Player one wins this round!")
 }
 else{
-  console.log("Come on in!")
+  console.log("It's a tie!")
 }
 ```
-
-> Note the order in which these conditionals are written. What would happen if we switched the conditions and content of the `if` and `else if` statements?
 
 Conditionals will always follow this pattern. There is a key word (`if`, `else if`, `else`), followed by an expression that will evaluate to true or false in parentheses, followed by code to execute when the condition is met.
