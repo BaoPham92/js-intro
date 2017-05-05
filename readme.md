@@ -82,6 +82,7 @@ So, to sum up the main three components of front-end web development up in one w
   > Javascript enables us to do all that in a browser (i.e., client-side) using the tools you learned in the pre-work like data types, loops and functions.
 
 </details>
+<br>
 
 Brief history: Javascript was created in 10 days by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) of Netscape/Mozilla.
 * The programming language is not related to Java in any way but its name. "Java" is to "Javascript" as "ham" is to "hamster."

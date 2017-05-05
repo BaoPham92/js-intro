@@ -20,17 +20,17 @@ We store data types in variables. A variable is a "bucket" that holds data. You 
 var myClass = "WDI16"
 // var - indicates a variable is being defined
 // myClass - the name of the variables
-// "WDI15" - the value being assigned to the variable
+// "WDI16" - the value being assigned to the variable
 ```
 
 After declaration you can then reference variables by just their name, without "var"...
 
 ```js
 myClass
-// => "WDI15"
+// => "WDI16"
 ```
 
-Javascript is a "dynamically typed" language, meaning a variable can switch between data types. The following change is valid.
+Javascript is a "dynamically-typed" language, meaning a variable can switch between data types. The following change is valid.
 
 ```js
 var myFavoriteNumber = 5
@@ -73,7 +73,7 @@ Like normal math, Javascript follows the traditional order of operations: P.E.M.
   3. Multiplication
   4. Division
   5. Addition
-  6. Subtraction)
+  6. Subtraction
 
 ```js
 (4 + 2) * (12 / 3)
