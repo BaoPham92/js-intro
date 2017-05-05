@@ -2,23 +2,23 @@
 
 ## Learning Objectives
 
-- Describe the role Javascript plays alongside HTML and CSS.
-- List and describe the primitive data types and common complex data types.
-- Practice proper JS syntax and semantic variable naming.
-- Describe uses of mathematical operators in Javascript.
-- Define type coercion.
+- Describe the role Javascript plays alongside HTML and CSS
+- List and describe the primitive data types and common complex data types
+- Practice proper JS syntax and semantic variable naming
+- Describe uses of mathematical operators in Javascript
+- Define type coercion
 - Explain the difference between `prompt` and `console.log`
-- Differentiate between `true` & `false` && ***truthy*** & ***falsey***
-- Write an if, else if, and else statement in JS and describe how control flow is used in programming
-- Write a for loop and while loop, differentiate between them and use loops to iterate through complex data types
+- Differentiate between `true` & `false` && "truthy" & "falsey"
+- Write an `if`-`else if`-`else` statement in JS and describe how control flow is used in programming
+- Write a `for` loop and `while` loop, differentiate between them and use loops to iterate through complex data types
 
-## Framing (10 minutes / 0:10)
+## Framing (5 minutes / 0:05)
 
-We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS but not nearly enough! How can we start to add logic, data-handling, and behaviors to our web apps? Enter javascript.
+We've dabbled with HTML and CSS. There's a bit of interactivity we can program through CSS but not nearly enough! How can we start to add logic, data-handling and behaviors to our web apps? Enter Javascript.
 
 ### HTML, CSS and Javascript
 
-HTML, CSS and Javascript are technologies which serve as the basic components of front-end development. Front-end frameworks and libraries that add layers of abstraction (i.e., the ability to do more with less code) make use of these three technologies.
+HTML, CSS and Javascript are technologies, which serve as the basic components of front-end development. Front-end frameworks and libraries that add layers of abstraction (i.e., the ability to do more with less code) make use of these three technologies.
 
 #### If a web application or website were a building...
 
@@ -34,13 +34,13 @@ CSS is responsible for the appearance of the building, adding granite floors, po
 
 Javascript might be like the building's elevator systems, ID-scanning & entry systems. Javascript handles interactivity and data.
 
-## Think-Pair-Share: Cookie Clicker (10 minutes / 0:20)
+## Think-Pair-Share: Cookie Clicker (10 minutes / 0:15)
 
 > 5 minutes exercise. 5 minutes review.
 
 **Spend 2 minutes** playing with [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/). Think about how the page responds to your actions. What is allowing these behaviors to exist?
 
-**Spend 3 minutes** comparing your individual findings in pairs. With your partner, file an issue on the lesson repo including three features that you think are powered by Javascript.
+**Spend 3 minutes** comparing your individual findings in pairs. With your partner, [file an issue](https://github.com/ga-wdi-lessons/js-intro/issues/new) on the lesson repo including three features that you think are powered by Javascript.
 
 ### Findings
 
@@ -72,27 +72,27 @@ So, to sum up the main three components of front-end web development up in one w
 * CSS: Styling
 * Javascript: Behavior
 
-## Javascript: The Client-Side Programming Language of the Web (5 Minutes / 0:25)
+## Javascript: The Client-Side Programming Language of the Web (5 Minutes / 0:20)
+
+<details>
+<summary><strong>What's a programming language? What can it do that a markup language like HTML can't?</strong></summary>
+
+> It let's us do things! It lets us act on information, manipulate it, display it, pretty much whatever we want.
+>
+> Javascript enables us to do all that in a browser (i.e., client-side) using the tools you learned in the pre-work like data types, loops and functions.
+
+</details>
 
 Brief history: Javascript was created in 10 days by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) of Netscape/Mozilla.
 * The programming language is not related to Java in any way but its name. "Java" is to "Javascript" as "ham" is to "hamster."
 * Javascript has since gone through multiple iterations, the latest being ECMA Script 6 (ES6/2015)
 
-<details>
-  <summary><strong>What's a programming language? What can it do that a markup language like HTML can't?</strong></summary>
-
-  > It let's us do things! It lets us act on information, manipulate it, display it, pretty much whatever we want.
-
-  > Javascript enables us to do all that in a browser.
-  > * Using the tools you learned in the pre-work (e.g., data types, loops, functions).
-
-</details>
 
 ### Why is it the dominant programming language of the web?
 
 Barriers to entry for learning Javascript are very low. No additional software required to run it. Just a text editor and a browser.
-- You can even run it directly in the browser via its Javascript console.
-- Ex. hide images on the GA website.
+- You can even run it directly in the browser via its Javascript console
+- Ex. hide images on ESPN website
 
 Javascript is supported by all web browsers.
 - [Some browsers](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs) support more features than others
@@ -102,7 +102,7 @@ Javascript continues to evolve.
 
 A lot of Javascript frameworks and libraries (e.g., jQuery, React) have emerged that enable us to do so much more with Javascript (and do it quickly).
 
-## Setting Up Our Environment (5 minutes / 0:30)
+## Setting Up Our Environment (5 minutes / 0:25)
 
 We're going to spend the next few minutes learning how to set up our development environment, or our work area for working with Javascript. As far as development environments go, this is about as simple as it gets! If it feels unfamiliar and cumbersome to set up at first, don't worry -- speed quickly comes with repetition.
 
@@ -110,15 +110,13 @@ We're going to spend the next few minutes learning how to set up our development
 
 1. [Create files](#filecreate)
 2. Save changes to file(s)
-  - `⌘ S`
+    - `⌘ S`
 3. [Open files in chrome and open chrome console](#openinchrome)
-  - `⌘ TAB` to switch to Chrome, if open
-  - If Chrome isn't open, `⌘ [SPACE]` to open Spotlight (Max OS X Finder Speed Search), and then type Chrome and hit enter when the Chrome icon appears
+    - `⌘ TAB` to switch to Chrome, if open
+    - If Chrome isn't open, `⌘ [SPACE]` to open Spotlight (Max OS X Finder Speed Search), and then type Chrome and hit enter when the Chrome icon appears
 
 <a name="filecreate"></a>
-#### Create HTML and JS Files
-
-- `index.html` and `script.js`
+#### Create `index.html` and `script.js` Files
 
 ```html
 <!-- index.html -->
@@ -132,6 +130,12 @@ We're going to spend the next few minutes learning how to set up our development
   <script src="script.js"></script>
   </body>
 </html>
+```
+
+```js
+// script.js
+
+console.log("hello world")
 ```
 
 You can also put your script tag in the head. Putting the tag in the body ensures that the rest of the page loads before your script files run. Also of note, [HTML5 added two attributes ](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html) that increase control when scripts load and run.
@@ -159,14 +163,6 @@ What does it do?
 
 > In Chrome, `⌘ + ⌥ + i` opens the chrome dev tools. Here you can do a bunch of stuff like inspect elements and see html, css and scripts the page has loaded. It allows you to access the console which interacts with the JS that the page has loaded. In our case we'll see that interaction with the code below
 
-In your `script.js` file add the following...
-
-```js
-console.log("hello world")
-```
-
-> We can use console.log() to print something to the console.
-
 ------
 
 ## Exercises
@@ -180,31 +176,31 @@ For each exercise you will be working in pairs.
 1. Clone down the [data types repo here](https://github.com/ga-wdi-exercises/js-data-types)
 2. In Atom, open [exercise.md](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md). You will use this as the worksheet for the next three exercises.
 
-## You Do: Data Types & Data Collections (25 minutes / 0:55)
+## You Do: Data Types & Data Collections (25 minutes / 0:50)
 
 Complete the **Data Types** and **Data Collections** exercises in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
 
 > You can use the [Data Types And Collections](./data-types-and-collections.md) readme as reference and review.
 
-### Review (10 minutes / 1:05)
+### Review (10 minutes / 1:00)
 
-## Break (10 minutes / 1:15)
+## Break (10 minutes / 1:10)
 
-## You Do: Booleans & Conditionals (25 minutes / 1:40)
+## You Do: Booleans & Conditionals (25 minutes / 1:35)
 
 Complete the **Booleans & Comparison Operators** and **Conditionals** exercises in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
 
 > You can use the [Booleans and Conditionals](./booleans-and-conditionals.md) readme as reference and review.
 
-### Review (10 minutes / 1:50)
+### Review (10 minutes / 1:45)
 
-## You Do: Loops (20 minutes / 2:10)
+## You Do: Loops (20 minutes / 2:05)
 
 Complete the **Loops** exercise in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
 
 > You can use the [Loops](./loops.md) readme as reference and review.
 
-### Review (10 minutes / 2:20)
+### Review (10 minutes / 2:15)
 
 ---------
 
@@ -230,11 +226,11 @@ console.log(valueOfPrompt)
 You can also pass in a string as an argument to have the pop up box contain that string as a ... prompt.
 
 ```js
-var age = prompt("How old are you?");
+var age = prompt("How old are you?")
 // ES6 String Interpolation
-alert(`You are ${age} years old.`);
+alert(`You are ${age} years old.`)
 // ES5 Version
-alert("You are " + age + " years old.");
+alert("You are " + age + " years old.")
 ```
 
 Whatever we type into the textbox in the window that `prompt()` brings up, is **returned** by prompt to the variable `age`.
@@ -244,15 +240,15 @@ Whatever we type into the textbox in the window that `prompt()` brings up, is **
 Let's say, we were deciding whether or not to let someone inside of a club.
 
 ```js
-var age = prompt("How old are you?");
-alert(`You are ${age} years old.`);
+var age = prompt("How old are you?")
+alert(`You are ${age} years old.`)
 
 if (age >= 21) {
-  alert("Welcome to the club");
+  alert("Welcome to the club")
 } else if (age < 21 && age > 0) {
-  alert( "You are too young :(" );
+  alert( "You are too young :(" )
 } else {
-  alert("Your age is not a number (NaN) or is negative. Invalid input.");
+  alert("Your age is not a number (NaN) or is negative. Invalid input.")
 }
 ```
 
