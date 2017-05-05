@@ -1,4 +1,4 @@
-# Data Types and Collections
+# Data Types and Structures
 
 Primitive data types are the building blocks of Javascript. Whenever you do anything in Javascript, you are creating and changing these basic pieces of information.
 

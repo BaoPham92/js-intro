@@ -24,13 +24,13 @@ HTML, CSS and Javascript are technologies, which serve as the basic components o
 
 ##### HTML: Structure and Content
 
-HTML would be like the most stripped down version of that building, just the structure of the building, the building materials, and some content (maybe unfurnished offices, an empty classroom, a set of not-yet-operational bowling-lanes, etc).
+HTML would be like the most stripped-down version of that building -- just the structure of the building, the building materials, and some content (maybe unfurnished offices, an empty classroom, a set of not-yet-operational bowling-lanes, etc).
 
 ##### CSS: Styling
 
 CSS is responsible for the appearance of the building, adding granite floors, polished doors, wooden railings, etc. CSS styles the content of a website to look like more than just black text on a white background.
 
-##### Javascript: Behavior and Functionality
+##### Javascript: Behavior & Functionality
 
 Javascript might be like the building's elevator systems, ID-scanning & entry systems. Javascript handles interactivity and data.
 
@@ -65,7 +65,7 @@ While this isn't the case with Cookie Clicker, Javascript has the ability to com
 
 > Cookie Clicker uses the browser's [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) you save information
 
-This is not an exhaustive list of Javascript properties, but we'll go over these and more in more detail later on in the course.
+This is not an exhaustive list of Javascript properties, but we'll go over these and more in greater detail later on in the course.
 
 So, to sum up the main three components of front-end web development up in one word each...
 * HTML: Structure
@@ -77,9 +77,9 @@ So, to sum up the main three components of front-end web development up in one w
 <details>
 <summary><strong>What's a programming language? What can it do that a markup language like HTML can't?</strong></summary>
 
-> It let's us do things! It lets us act on information, manipulate it, display it, pretty much whatever we want.
->
-> Javascript enables us to do all that in a browser (i.e., client-side) using the tools you learned in the pre-work like data types, loops and functions.
+  > It lets us do things! It lets us act on information, manipulate it, display it, pretty much whatever we want.
+  >
+  > Javascript enables us to do all that in a browser (i.e., client-side) using the tools you learned in the pre-work like data types, loops and functions.
 
 </details>
 
@@ -117,6 +117,15 @@ We're going to spend the next few minutes learning how to set up our development
 
 <a name="filecreate"></a>
 #### Create `index.html` and `script.js` Files
+
+Creating a JS intro directory that contains an `index.html` and `script.js` file. If you already have a `wdi` directory with contains a `sandbox` directory, you can run the below Terminal commands...
+
+```bash
+cd ~/wdi/sandbox
+touch index.html script.js
+```
+
+The `index.html` and `script.js` files should contain the following...
 
 ```html
 <!-- index.html -->
@@ -161,7 +170,7 @@ What does it do?
   3. (**P**)rints the result to the console, if any (some things result in or ***return*** `undefined`).
   4. Then it (**L**)oops back to the beginning, ready to (**R**)ead the next line of code we feed it. It 'listens' for new code.
 
-> In Chrome, `⌘ + ⌥ + i` opens the chrome dev tools. Here you can do a bunch of stuff like inspect elements and see html, css and scripts the page has loaded. It allows you to access the console which interacts with the JS that the page has loaded. In our case we'll see that interaction with the code below
+> In Chrome, `⌘ + ⌥ + i` opens the chrome dev tools. Here you can do a bunch of stuff like inspect elements and see HTML, CSS and scripts the page has loaded. It allows you to access the console which interacts with the JS that the page has loaded. In our case we'll see that interaction with the code below
 
 ------
 
@@ -176,9 +185,9 @@ For each exercise you will be working in pairs.
 1. Clone down the [data types repo here](https://github.com/ga-wdi-exercises/js-data-types)
 2. In Atom, open [exercise.md](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md). You will use this as the worksheet for the next three exercises.
 
-## You Do: Data Types & Data Collections (25 minutes / 0:50)
+## You Do: Data Types & Data Structures (25 minutes / 0:50)
 
-Complete the **Data Types** and **Data Collections** exercises in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
+Complete the **Data Types** and **Data Structures** exercises in [`exercise.md`](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)
 
 > You can use the [Data Types And Collections](./data-types-and-collections.md) readme as reference and review.
 
@@ -212,7 +221,7 @@ Complete the **Loops** exercise in [`exercise.md`](https://github.com/ga-wdi-exe
 
 ### `.prompt()`
 
-We've learned about basic data types, but it'd be nice if we had a way of getting user input into our browser! We'll learn some ways to use forms and such later in the course, but for now, we'll be getting user input using the `prompt()` function.
+We've learned about basic data types, but it'd be nice if we had a way of getting user input into our browser. We'll learn some ways to use forms and such later in the course, but for now, we'll be getting user input using the `prompt()` function.
 
 At any point in our JS code, if we write `prompt()`, a pop up box will open in our browser for a user to enter in text.
 
@@ -262,13 +271,10 @@ if (age >= 21) {
 
 ## Review Questions
 
-1. When would you use an array over an object? And vice-versa?
+1. What role does Javascript play on a website?
 2. What is the difference between `undefined` and `null`?
-3. Provide an example of a semantically-named variable. Explain your choice.
-4. What role does Javascript play on a website?
-5. What are the five primitive data types?
-6. What are the two composite data types? When would you use each?
-7. What is an example of type coercion?
+3. What are the five primitive data types?
+4. What is an example of type coercion?
 
 ## Additional Exercises
 
@@ -311,7 +317,7 @@ function helloWorld(){
 
 ### Comments
 
-Comments are an extremely important part of writing code. They help us make sense out of our code, especially other people reading our code, or when we have walked away from some code and have completely forgotten what certain sections of it do (this happens much more quickly than you may imagine!). They are used to explain the purpose or reasoning behind a piece of code.
+Comments are an extremely important part of writing code. They help us make sense of our code, especially for other people reading our code, or when we have walked away from some code and have completely forgotten what certain sections of it do. This happens much more quickly than you may imagine.
 
 If you are working on a team, your documentation and commenting practices often translate to how easy you are to work with!
 
